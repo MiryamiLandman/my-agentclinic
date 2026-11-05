@@ -16,6 +16,25 @@ const ailments = [
   { id: 4, name: "נשירת נוצות", description: "נוצות נושרות מחוץ לעונה." },
 ];
 
+const therapies = [
+  { id: 1, name: "מנוחה וקיבוע", description: "הגבלת תנועה עד שהרגל נרגעת." },
+  { id: 2, name: "משחה לעור", description: "מריחה מקומית להרגעת גירוד." },
+  { id: 3, name: "מעקב תזונה", description: "בדיקת מה החיה אוכלת ומתי." },
+  { id: 4, name: "בדיקת נוצות", description: "בדיקה אם הנשירה עונתית או דורשת טיפול." },
+];
+
+const therapyLinks: [number, number][] = [
+  [1, 1],
+  [2, 2],
+  [3, 3],
+  [4, 4],
+];
+
+const appointments = [
+  { id: 1, animal_id: 1, therapist_name: "ד״ר לוי", scheduled_at: "2099-01-15T10:00:00", status: "confirmed" },
+  { id: 2, animal_id: 3, therapist_name: "ד״ר כהן", scheduled_at: "2099-02-20T14:30:00", status: "pending" },
+];
+
 const links: [number, number[]][] = [
   [1, [1]],
   [2, [2]],
@@ -35,10 +54,22 @@ export function seed(db: Database.Database) {
   const insertLink = db.prepare(
     "INSERT OR IGNORE INTO animal_ailments (animal_id, ailment_id) VALUES (?, ?)",
   );
+  const insertTherapy = db.prepare(
+    "INSERT OR IGNORE INTO therapies (id, name, description) VALUES (@id, @name, @description)",
+  );
+  const insertTherapyLink = db.prepare(
+    "INSERT OR IGNORE INTO ailment_therapies (ailment_id, therapy_id) VALUES (?, ?)",
+  );
+  const insertAppointment = db.prepare(
+    "INSERT OR IGNORE INTO appointments (id, animal_id, therapist_name, scheduled_at, status) VALUES (@id, @animal_id, @therapist_name, @scheduled_at, @status)",
+  );
 
   for (const animal of animals) insertAnimal.run(animal);
   for (const ailment of ailments) insertAilment.run(ailment);
   for (const [animalId, ailmentIds] of links) {
     for (const ailmentId of ailmentIds) insertLink.run(animalId, ailmentId);
   }
+  for (const therapy of therapies) insertTherapy.run(therapy);
+  for (const [ailmentId, therapyId] of therapyLinks) insertTherapyLink.run(ailmentId, therapyId);
+  for (const appointment of appointments) insertAppointment.run(appointment);
 }

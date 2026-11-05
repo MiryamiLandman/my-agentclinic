@@ -32,6 +32,9 @@ export const AnimalDetail: FC<AnimalDetailProps> = ({ animal, ailments }) => (
       )}
     </article>
     <p>
+      <a href={`/animals/${animal.id}/appointments/new`}>קביעת תור</a>
+    </p>
+    <p>
       <a href="/animals">חזרה לחיות</a>
     </p>
   </Layout>

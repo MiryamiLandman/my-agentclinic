@@ -1,9 +1,15 @@
 import type { FC } from "hono/jsx";
-import type { Ailment } from "../db/types";
 import { Layout } from "./Layout";
 
+type AilmentRow = {
+  id: number;
+  name: string;
+  description: string;
+  therapies: string;
+};
+
 type AilmentsListProps = {
-  ailments: Ailment[];
+  ailments: AilmentRow[];
 };
 
 export const AilmentsList: FC<AilmentsListProps> = ({ ailments }) => (
@@ -14,6 +20,7 @@ export const AilmentsList: FC<AilmentsListProps> = ({ ailments }) => (
         <tr>
           <th scope="col">שם</th>
           <th scope="col">תיאור</th>
+          <th scope="col">טיפול</th>
         </tr>
       </thead>
       <tbody>
@@ -21,6 +28,7 @@ export const AilmentsList: FC<AilmentsListProps> = ({ ailments }) => (
           <tr key={ailment.id}>
             <td>{ailment.name}</td>
             <td>{ailment.description}</td>
+            <td>{ailment.therapies}</td>
           </tr>
         ))}
       </tbody>

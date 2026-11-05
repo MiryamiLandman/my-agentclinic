@@ -13,6 +13,12 @@ export const Header: FC<HeaderProps> = () => (
         <li>
           <a href="/ailments">תסמינים</a>
         </li>
+        <li>
+          <a href="/therapies">טיפולים</a>
+        </li>
+        <li>
+          <a href="/dashboard">דשבורד</a>
+        </li>
       </ul>
     </nav>
   </header>

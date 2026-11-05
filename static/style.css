@@ -83,6 +83,47 @@ td a {
   color: var(--color-header);
 }
 
+:focus-visible {
+  outline: 2px solid var(--color-header);
+  outline-offset: 2px;
+}
+
+.stats {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.stats article {
+  margin: 0;
+  padding: var(--space-md);
+  background: #fff;
+  border: 1px solid var(--color-border);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+input,
+button {
+  font: inherit;
+}
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 24rem;
+  margin-top: var(--space-xs);
+}
+
+button {
+  background: var(--color-header);
+  color: var(--color-header-text);
+  border: 0;
+  padding: var(--space-sm) var(--space-md);
+}
+
 @media (min-width: 640px) {
   header {
     padding: var(--space-md) var(--space-xl);
@@ -94,5 +135,9 @@ td a {
 
   footer {
     padding: var(--space-md) var(--space-xl);
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

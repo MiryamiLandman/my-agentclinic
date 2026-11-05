@@ -21,27 +21,27 @@ The words on the screens are in Hebrew.
 - An `/ailments` page
 - A link from an animal to one or more ailments
 
-## Phase 3 — Therapies Catalog
+## Phase 3 — Therapies Catalog ✅
 - A `therapies` table and seed data
 - A `/therapies` page
 - A link from an ailment to the therapies that fit it
 
-## Phase 4 — Appointment Booking
+## Phase 4 — Appointment Booking ✅
 - An `appointments` table: animal, vet, date and time, status
 - A booking form on the animal's page
 - Input checks and a confirmation page
 
-## Phase 5 — Staff Dashboard
+## Phase 5 — Staff Dashboard ✅
 - A `/dashboard` page with counts: animals, open appointments, active ailments
 - Simple tables for staff
 - Mary's dashboard exists
 
-## Phase 6 — Polish and Accessibility
+## Phase 6 — Polish and Accessibility ✅
 - Check that every later page keeps the mobile-first layout from the base stylesheet
 - A semantic HTML pass
 - Keyboard navigation and a visible focus style
 
-## Phase 7 — Hardening
+## Phase 7 — Hardening ✅
 - 404 and 500 pages
 - Input sanitizing on every form
 - Basic logging middleware
