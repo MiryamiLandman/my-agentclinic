@@ -1,0 +1,10 @@
+# Changelog
+
+## 2026-11-05
+- Add Vitest, a mobile-first layout, and a changelog skill.
+- Add a Hebrew layout with header, main, and footer, and mark phase 1 done.
+- Serve a Hebrew pet-clinic home page with Hono.
+- Rewrite the specs in English and keep the screens in Hebrew.
+- Add the Hello Hono spec for a Hebrew pet-clinic home page.
+- Add the pet clinic constitution: mission, tech stack, and roadmap.
+- Record the TypeScript scaffold and the Cursor Agent CLI install.
