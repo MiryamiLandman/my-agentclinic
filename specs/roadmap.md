@@ -46,7 +46,7 @@ The words on the screens are in Hebrew.
 - Mary's dashboard exists
 
 ## Phase 9 — Polish and Accessibility
-- A responsive layout, for Steve's modern-browser requirement
+- Check that every later page keeps the mobile-first layout from the base stylesheet
 - A semantic HTML pass
 - Keyboard navigation and a visible focus style
 

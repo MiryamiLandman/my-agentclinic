@@ -21,6 +21,10 @@ In `package.json`, the `hono` version is written with no `^` and no `~`. It is n
 
 `tsconfig.json` must include `"strict": true` from the first code commit of this phase.
 
+### Checks
+
+Vitest covers the home page and the layout components. `npm test` passes before merge. The stylesheet is mobile-first, with a wider layout from 640px.
+
 ### Layout files
 
 `Header`, `Main`, and `Footer` each live in their own file. `Layout` only composes them and links `static/style.css`.

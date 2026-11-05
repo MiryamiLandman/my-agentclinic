@@ -40,8 +40,19 @@ The home page HTML contains `<header`, `<main`, `<footer`, and a link to `/stati
 
 `tsconfig.json` contains `"strict": true`.
 
+## 7. Tests pass
+
+```
+npm test
+```
+
+The command exits with code 0.
+
+## 8. The layout is mobile-first
+
+`static/style.css` sets the compact spacing first and adds a `min-width: 640px` query for wider screens. The home page HTML includes `width=device-width`.
+
 ## Not required in this phase
 
-- No automated tests
 - No CI
-- No manual check of visual design. It is enough that the page comes back with the heading.
+- No manual check of every screen size. The stylesheet and the viewport tag are enough for this phase.
