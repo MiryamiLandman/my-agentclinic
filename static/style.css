@@ -106,15 +106,21 @@ label {
 }
 
 input,
+textarea,
 button {
   font: inherit;
 }
 
-input {
+input,
+textarea {
   display: block;
   width: 100%;
   max-width: 24rem;
   margin-top: var(--space-xs);
+}
+
+textarea {
+  min-height: 6rem;
 }
 
 button {

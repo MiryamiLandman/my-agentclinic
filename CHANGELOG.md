@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-11-05
+- Add a Hebrew feedback page for owners.
 - Add therapies, appointment booking, a staff dashboard, and Hebrew error pages.
 - Add Hebrew animal and ailment pages backed by SQLite.
 - Test that the header stays teal and the text stays ink.

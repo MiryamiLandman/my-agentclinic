@@ -35,6 +35,33 @@ const appointments = [
   { id: 2, animal_id: 3, therapist_name: "ד״ר כהן", scheduled_at: "2099-02-20T14:30:00", status: "pending" },
 ];
 
+const feedback = [
+  {
+    id: 1,
+    name: "דנה",
+    email: "dana@example.com",
+    message: "נועה חזרה הביתה רגועה אחרי הקיבוע.",
+    rating: 5,
+    created_at: "2026-11-01 09:00:00",
+  },
+  {
+    id: 2,
+    name: "יוסי",
+    email: null,
+    message: "המשחה עזרה לקוקו, אבל הגירוד עוד לא נגמר.",
+    rating: 3,
+    created_at: "2026-11-02 11:30:00",
+  },
+  {
+    id: 3,
+    name: "מיכל",
+    email: "michal@example.com",
+    message: "פיסטוק התחיל לאכול אחרי מעקב התזונה.",
+    rating: 4,
+    created_at: "2026-11-03 16:15:00",
+  },
+];
+
 const links: [number, number[]][] = [
   [1, [1]],
   [2, [2]],
@@ -63,6 +90,9 @@ export function seed(db: Database.Database) {
   const insertAppointment = db.prepare(
     "INSERT OR IGNORE INTO appointments (id, animal_id, therapist_name, scheduled_at, status) VALUES (@id, @animal_id, @therapist_name, @scheduled_at, @status)",
   );
+  const insertFeedback = db.prepare(
+    "INSERT OR IGNORE INTO feedback (id, name, email, message, rating, created_at) VALUES (@id, @name, @email, @message, @rating, @created_at)",
+  );
 
   for (const animal of animals) insertAnimal.run(animal);
   for (const ailment of ailments) insertAilment.run(ailment);
@@ -72,4 +102,5 @@ export function seed(db: Database.Database) {
   for (const therapy of therapies) insertTherapy.run(therapy);
   for (const [ailmentId, therapyId] of therapyLinks) insertTherapyLink.run(ailmentId, therapyId);
   for (const appointment of appointments) insertAppointment.run(appointment);
+  for (const note of feedback) insertFeedback.run(note);
 }

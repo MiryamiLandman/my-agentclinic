@@ -46,7 +46,7 @@ The words on the screens are in Hebrew.
 - Input sanitizing on every form
 - Basic logging middleware
 
-## Phase 8 — Feedback
+## Phase 8 — Feedback ✅
 Taken from `TODO.md` after the MVP was already running.
 
 - A `feedback` table and a few owner notes

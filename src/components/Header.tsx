@@ -19,6 +19,9 @@ export const Header: FC<HeaderProps> = () => (
         <li>
           <a href="/dashboard">דשבורד</a>
         </li>
+        <li>
+          <a href="/feedback">משוב</a>
+        </li>
       </ul>
     </nav>
   </header>

@@ -2,7 +2,7 @@
 
 The clinic through the MVP is already built. This list is the next work, in small phases.
 
-## Now
+## Done
 
 - Feedback form
 
