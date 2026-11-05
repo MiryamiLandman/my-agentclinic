@@ -7,13 +7,16 @@
     "build": "tsc",
     "dev": "tsx watch src/index.tsx",
     "typecheck": "tsc --noEmit",
+    "seed": "tsx src/db/run-seed.ts",
     "test": "vitest run"
   },
   "dependencies": {
     "@hono/node-server": "1.19.12",
+    "better-sqlite3": "12.8.0",
     "hono": "4.12.9"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "7.6.13",
     "tsx": "4.21.0",
     "typescript": "^5.5.3",
     "vitest": "4.1.2"

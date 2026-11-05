@@ -11,7 +11,7 @@ The words on the screens are in Hebrew.
 - One `/` route that shows "המרפאה פתוחה"
 - Confirm TypeScript types work end to end
 
-## Phase 2 — Animals and Ailments
+## Phase 2 — Animals and Ailments ✅
 - Navigation links in the header. The header, main, and footer already exist.
 - SQLite and a first migration for an `animals` table
 - A handful of example animals
