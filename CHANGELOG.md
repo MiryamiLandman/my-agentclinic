@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-11-05
+- Cover the database, booking rules, and Hebrew status labels.
 - Specify the about page for the pet clinic.
 - Add a feature-spec skill for the next roadmap phase.
 - Add a Hebrew feedback page for owners.

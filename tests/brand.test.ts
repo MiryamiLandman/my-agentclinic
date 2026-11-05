@@ -13,4 +13,8 @@ describe("brand colors", () => {
     expect(css).toContain("--color-text: #1c2b29");
     expect(css).toContain("color: var(--color-text)");
   });
+
+  it("shows a focus outline", () => {
+    expect(css).toContain(":focus-visible");
+  });
 });
