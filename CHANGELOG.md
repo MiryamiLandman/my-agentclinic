@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-11-05
+- Test that the header stays teal and the text stays ink.
+- Name the teal and ink brand colors and extract component prop types.
 - Add Vitest, a mobile-first layout, and a changelog skill.
 - Add a Hebrew layout with header, main, and footer, and mark phase 1 done.
 - Serve a Hebrew pet-clinic home page with Hono.
