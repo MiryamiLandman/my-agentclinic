@@ -46,6 +46,21 @@ The words on the screens are in Hebrew.
 - Input sanitizing on every form
 - Basic logging middleware
 
+## Phase 8 — Feedback
+Taken from `TODO.md` after the MVP was already running.
+
+- A `feedback` table and a few owner notes
+- A `/feedback` page with a form and the notes already sent
+- A משוב link in the header
+
+## Phase 9 — About the clinic
+- An `/about` page with the clinic address
+- A link in the header
+
+## Phase 10 — Owner reviews
+- A `reviews` table
+- A `/reviews` page where an owner can leave a short review
+
 ---
 
 Later phases, not planned yet: sign-in, email, a vet profile page, reports.

@@ -25,6 +25,7 @@ The pet clinic is a server-side TypeScript application. The browser receives fin
 
 - **SQLite** through `better-sqlite3`. One local file, no separate database server.
 - Migrations as SQL files. No ORM at this stage.
+- Public forms post plain HTML. The server strips tags, checks the required fields, and redirects after a successful save. No new library is added for that.
 
 ## Testing
 
