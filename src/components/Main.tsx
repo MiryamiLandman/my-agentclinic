@@ -1,3 +1,7 @@
-import { FC, PropsWithChildren } from "hono/jsx";
+import type { Child, FC } from "hono/jsx";
 
-export const Main: FC<PropsWithChildren> = ({ children }) => <main>{children}</main>;
+type MainProps = {
+  children?: Child;
+};
+
+export const Main: FC<MainProps> = ({ children }) => <main>{children}</main>;

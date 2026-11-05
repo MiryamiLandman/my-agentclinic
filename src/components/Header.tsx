@@ -1,6 +1,8 @@
-import { FC } from "hono/jsx";
+import type { FC } from "hono/jsx";
 
-export const Header: FC = () => (
+type HeaderProps = Record<string, never>;
+
+export const Header: FC<HeaderProps> = () => (
   <header>
     <a href="/">מרפאת החיות</a>
   </header>

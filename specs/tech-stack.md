@@ -37,9 +37,20 @@ The pet clinic is a server-side TypeScript application. The browser receives fin
 - `tsx` in development, so TypeScript runs without a build
 - `tsc` for the production build
 
+## Brand colors
+
+The clinic brand is teal and ink, not orange and black.
+
+| Token | Value | Use |
+|---|---|---|
+| `--color-header` | `#0f766e` | Header background |
+| `--color-header-text` | `#f8fffe` | Text on the header |
+| `--color-text` | `#1c2b29` | Body text |
+| `--color-bg` | `#f4fbf9` | Page background |
+
 ## CSS
 
-Base styles target a narrow screen. A `min-width: 640px` query adds room on larger screens. Spacing, color, and type size live in custom properties. The header color is teal, not orange and black. Brand colors can still be revised in a later phase.
+Base styles target a narrow screen. A `min-width: 640px` query adds room on larger screens. Spacing, color, and type size live in the brand tokens above.
 
 ## What We Are Not Using
 

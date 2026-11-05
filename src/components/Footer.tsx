@@ -1,6 +1,8 @@
-import { FC } from "hono/jsx";
+import type { FC } from "hono/jsx";
 
-export const Footer: FC = () => (
+type FooterProps = Record<string, never>;
+
+export const Footer: FC<FooterProps> = () => (
   <footer>
     <p>© {new Date().getFullYear()} מרפאת החיות</p>
   </footer>
