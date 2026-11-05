@@ -1,0 +1,55 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261105144152
+Username: DESKTOP-L9S4R74\This User
+RunAs User: DESKTOP-L9S4R74\This User
+Configuration Name: 
+Machine: DESKTOP-L9S4R74 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\THISUS~1\AppData\Local\Temp\ps-script-68d05244-2c90-414e-8315-fa3c0a5a0758.ps1
+Process ID: 8920
+PSVersion: 5.1.22621.6133
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.6133
+BuildVersion: 10.0.22621.6133
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is c:\Users\This User\Desktop\תכנות אג'נטי\שיעור מספר 1\my-agentclinic\docs\cli-install-log.txt
+
+===== שלב 1: התקנת Cursor Agent CLI =====
+פקודה: irm 'https://cursor.com/install?win32=true' | iex
+
+Git for Windows (with Git Bash) is required to run a private worker.
+Install it from https://git-scm.com/download/win
+
+Git for Windows (with Git Bash) is required to run a private worker.
+Install it from https://git-scm.com/download/win
+
+Start using Cursor Agent:
+   agent
+
+
+Happy coding!
+
+
+===== בדיקה: agent --version =====
+
+
+Name   : agent.ps1
+Source : C:\Users\This User\AppData\Local\cursor-agent\agent.ps1
+
+
+
+
+
+===== סיום =====
+**********************
+Windows PowerShell transcript end
+End time: 20261105144314
+**********************
+
+agent --version
+2026.11.05-86047df
+Source: C:\Users\This User\AppData\Local\cursor-agent\agent.ps1
