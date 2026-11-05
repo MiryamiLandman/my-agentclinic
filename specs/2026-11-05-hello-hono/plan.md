@@ -1,27 +1,28 @@
-# תוכנית שלב 1 — Hello Hono
+# Phase 1 Plan — Hello Hono
 
-קבוצות משימות לפי הסדר. כל קבוצה אפשר לבדוק בנפרד.
+Task groups in order. Each group can be checked on its own.
 
-## קבוצה 1 — התקנת חבילות
+## Group 1 — Package Setup
 
-1. להתקין את `hono` בגרסה מדויקת, בלי `^`.
-2. להתקין את `tsx` כתלות פיתוח.
-3. לוודא ש-`tsconfig.json` כולל `"strict": true`.
+1. Install `hono` at an exact version, with no `^`.
+2. Install `@hono/node-server` at an exact version, so the app can listen on a port.
+3. Install `tsx` as a dev dependency.
+4. Keep `"strict": true` in `tsconfig.json`, and set `jsx` to `react-jsx` with `jsxImportSource` set to `hono/jsx`.
 
-## קבוצה 2 — דף הבית
+## Group 2 — Home Page
 
-4. להחליף את `src/index.ts` באפליקציית Hono קטנה.
-5. ליצור רכיב JSX לדף הבית, `src/pages/Home.tsx`.
-6. הכותרת היא «המרפאה פתוחה», ומתחתיה משפט קצר על מרפאת החיות.
-7. מסלול `GET /` מחזיר את הדף כ-HTML, לא כמחרוזת רגילה.
-8. השרת מאזין על פורט 3000.
+5. Replace `src/index.ts` with `src/index.tsx`, a small Hono app.
+6. Create a JSX home page component, `src/pages/Home.tsx`.
+7. The heading is "המרפאה פתוחה", with a short sentence under it about the pet clinic.
+8. `GET /` returns that page as HTML, not a plain string.
+9. The server listens on port 3000.
 
-## קבוצה 3 — פקודות
+## Group 3 — Scripts
 
-9. להוסיף ל-`package.json` את `"dev": "tsx watch src/index.ts"`.
-10. להוסיף את `"typecheck": "tsc --noEmit"`.
+10. Add `"dev": "tsx watch src/index.tsx"` to `package.json`.
+11. Add `"typecheck": "tsc --noEmit"`.
 
-## קבוצה 4 — בדיקה
+## Group 4 — Check
 
-11. `npm run typecheck` יוצא בלי שגיאות.
-12. `npm run dev` מפעיל את השרת, והדף ב-`http://localhost:3000` מכיל «המרפאה פתוחה».
+12. `npm run typecheck` exits with no errors.
+13. `npm run dev` starts the server, and `http://localhost:3000` contains "המרפאה פתוחה".

@@ -1,24 +1,24 @@
-# ייעוד
+# Mission
 
-מרפאת החיות קיימת כדי שבעל חיה יבין מה קורה לחיה שלו בלי לחכות לטלפון מהמרפאה. הוא נכנס לאתר, רואה את החיה, את התסמינים ואת הטיפול שמתאים, וקובע תור. הצוות רואה באותו אתר כמה חיות יש וכמה תורים פתוחים.
+The pet clinic exists so an owner can see what is going on with their animal without waiting for a phone call. They open the site, see the animal, the ailment, and the matching therapy, and book an appointment. Staff see, on the same site, how many animals there are and how many appointments are open.
 
-## מה אנחנו עושים
+## What We Do
 
-האתר הוא מרפאה לחיות מחמד. בעל חיה רואה את החיה, את התסמינים ואת הטיפול המתאים, וקובע תור. הצוות מנהל את כל זה מדשבורד אחד.
+The site is a clinic for pets. An owner sees the animal, the ailments, and the matching therapy, and books an appointment. Staff run the clinic from one dashboard.
 
-## את מי אנחנו משרתים
+## Who We Serve
 
-- **בעלי חיות** — נכנסים, רואים מה יש לחיה, וקובעים תור.
-- **הצוות** — רואה כמה חיות יש, אילו תסמינים פעילים, ואילו תורים פתוחים.
-- **הווטרינר** — מקושר לטיפול ולתור, גם אם עדיין אין לו עמוד משלו.
+- **Owners** — open the site, see what is wrong, and book an appointment.
+- **Staff** — see how many animals there are, which ailments are active, and which appointments are open.
+- **The vet** — linked from a therapy and an appointment, even though a vet profile page is not part of this version.
 
-## קהל יעד
+## Target Audience
 
-- **סטודנטים בקורס** שלומדים פיתוח מונחה-אפיון עם סוכני קוד. הפרויקט שלם וקטן מספיק כדי לעבור ממשפט של בעלי עניין לאתר עובד.
-- **מפתחים בהדגמה בכנס** שצריכים סיפור ברור ואפשרות לבנות משהו שאפשר להראות על המסך.
+- **Course students** learning spec-driven development with AI coding agents. The project is complete and small enough to go from a stakeholder sentence to a working site.
+- **Developers giving a conference demo** who need a clear story and something they can show on a screen.
 
-## איך נראית הצלחה
+## What Success Looks Like
 
-בעל חיה מוצא את החיה שלו, מבין איזה טיפול מתאים לתסמין, ויוצא עם תור. הצוות פותח את הדשבורד ורואה מספרים אמיתיים, לא רשימה במחברת.
+An owner finds their animal, understands which therapy fits the ailment, and leaves with an appointment. Staff open the dashboard and see real counts.
 
-הטקסט על המסכים כתוב בעברית.
+The words on the screens are in Hebrew.

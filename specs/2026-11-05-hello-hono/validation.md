@@ -1,41 +1,41 @@
-# אימות שלב 1 — Hello Hono
+# Phase 1 Validation — Hello Hono
 
-אפשר למזג את הענף רק אם כל הסעיפים נכונים.
+The branch can be merged only when every item below is true.
 
-## 1. TypeScript עובר
+## 1. TypeScript passes
 
 ```
 npm run typecheck
 ```
 
-הפקודה יוצאת עם קוד 0, בלי שגיאות.
+The command exits with code 0 and no errors.
 
-## 2. השרת עולה
+## 2. The server starts
 
 ```
 npm run dev
 ```
 
-השרת עולה בלי שגיאה ומאזין על פורט 3000.
+The server starts without an error and listens on port 3000.
 
-## 3. הדף בעברית
+## 3. The page is in Hebrew
 
 ```
 curl -s http://localhost:3000
 ```
 
-התשובה היא 200, והגוף הוא HTML שמכיל את הטקסט `המרפאה פתוחה`.
+The response is 200, and the body is HTML that contains the text `המרפאה פתוחה`.
 
-## 4. גרסת Hono קבועה
+## 4. The Hono version is pinned
 
-ב-`package.json` השדה `hono` בלי `^` ובלי `~`.
+In `package.json`, `hono` has no `^` and no `~`.
 
-## 5. TypeScript קפדני
+## 5. Strict TypeScript is on
 
-ב-`tsconfig.json` מופיע `"strict": true`.
+`tsconfig.json` contains `"strict": true`.
 
-## לא נדרש בשלב הזה
+## Not required in this phase
 
-- בלי בדיקות אוטומטיות
-- בלי CI
-- בלי בדיקה ידנית של עיצוב בדפדפן. מספיק שהדף חוזר עם הכותרת.
+- No automated tests
+- No CI
+- No manual check of visual design. It is enough that the page comes back with the heading.

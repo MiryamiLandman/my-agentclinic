@@ -1,35 +1,35 @@
-# דרישות שלב 1 — Hello Hono
+# Phase 1 Requirements — Hello Hono
 
-## היקף
+## Scope
 
-מתקינים את Hono עם שרת פיתוח של `tsx`. מסלול `/` אחד מציג דף בית בעברית. TypeScript עובר בדיקה מקצה לקצה.
+Install Hono with a `tsx` dev server. A single `/` route shows a Hebrew home page. TypeScript checks pass end to end.
 
-## מחוץ להיקף
+## Out of Scope
 
-- בלי תבנית משותפת, תפריט או CSS מלא. זה השלב הבא.
-- בלי בדיקות אוטומטיות. Vitest יגיע אחר כך.
-- בלי מסד נתונים ובלי עמודים נוספים.
-- בלי CI.
+- No shared layout, navigation, or full CSS. That is the next phase.
+- No automated tests. Vitest comes later.
+- No database and no other pages.
+- No CI.
 
-## החלטות
+## Decisions
 
-### גרסת Hono קבועה
+### Pin the Hono version
 
-ב-`package.json` הגרסה של `hono` נכתבת בלי `^` ובלי `~`. לא משדרגים אותה בשקט.
+In `package.json`, the `hono` version is written with no `^` and no `~`. It is not upgraded silently.
 
-### TypeScript קפדני
+### Strict TypeScript
 
-`tsconfig.json` חייב לכלול `"strict": true` כבר מהקומיט הראשון של הקוד.
+`tsconfig.json` must include `"strict": true` from the first code commit of this phase.
 
-### עברית במסך
+### Hebrew on the screen
 
-כותרת הדף היא «המרפאה פתוחה». מתחתיה משפט קצר: בעל חיה רואה את החיה, את הטיפול, וקובע תור.
+The page heading is "המרפאה פתוחה". Under it, one short sentence: an owner sees the animal, the therapy, and books an appointment.
 
-## הקשר
+## Context
 
-השלב הזה רק מוכיח שהבסיס עובד: Node מריץ TypeScript, Hono מחזיר דף, ולולאת הפיתוח פועלת.
+This phase only proves the baseline: Node runs TypeScript, Hono returns a page, and the dev loop works.
 
-## בעלי עניין
+## Stakeholders
 
-- **מארי** צריכה TypeScript לאורך כל הדרך. זה מתקיים אם `strict` דלוק ו-`tsc --noEmit` עובר.
-- **סטיב** עדיין לא מקבל עיצוב. השלב הזה הוא הצנרת ודף אחד קריא.
+- **Mary** needs TypeScript end to end. That holds when `strict` is on and `tsc --noEmit` passes.
+- **Steve** does not get a design yet. This phase is the plumbing and one readable page.

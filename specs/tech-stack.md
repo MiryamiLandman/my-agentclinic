@@ -1,40 +1,40 @@
-# סטאק
+# Tech Stack
 
-מרפאת החיות היא אפליקציית TypeScript שרצה על השרת. הדפדפן מקבל HTML מוכן. הטקסט במסכים בעברית.
+The pet clinic is a server-side TypeScript application. The browser receives finished HTML. The words on the screens are in Hebrew.
 
-## הבסיס
+## Core
 
-| שכבה | בחירה | למה |
+| Layer | Choice | Why |
 |---|---|---|
-| שפה | TypeScript | דרישה של מארי: אתר יציב על סטאק נפוץ |
-| סביבת הרצה | Node.js | יציב, עם הרבה ספריות |
-| שרת | **Hono** | קל, בנוי ל-TypeScript, בלי הגדרות מיותרות |
-| תבניות | Hono JSX בצד השרת | רכיבים כפונקציות, בלי React בדפדפן |
-| עיצוב | CSS רגיל ומשתני CSS | בלי שלב בנייה נוסף. סטיב מקבל אתר שנראה טוב בדפדפן מודרני |
+| Language | TypeScript | Mary's requirement: a reliable site on a popular stack |
+| Runtime | Node.js | Stable, with a large ecosystem |
+| Server | **Hono** | Small, built for TypeScript, little configuration |
+| Templates | Hono JSX on the server | Components are functions, with no React in the browser |
+| Styling | Plain CSS and CSS custom properties | No extra build step. Steve gets a site that looks right in a modern browser |
 
-## למה Hono
+## Why Hono
 
-[Hono](https://hono.dev) מתאים יותר מ-Express או Fastify לפרויקט הזה:
+[Hono](https://hono.dev) fits this project better than Express or Fastify:
 
-- TypeScript בלי הגדרה נפרדת
-- JSX מובנה ל-HTML מהשרת
-- מידלוור פשוט
-- רץ על Node בלי לשנות את הקוד
+- TypeScript with no separate setup
+- Built-in JSX for server-rendered HTML
+- Simple middleware
+- Runs on Node without changing the code
 
-## נתונים
+## Data
 
-- **SQLite** דרך `better-sqlite3`. קובץ מקומי, בלי שרת מסד נפרד.
-- מיגרציות בקובצי SQL. בלי ORM בשלב הזה.
+- **SQLite** through `better-sqlite3`. One local file, no separate database server.
+- Migrations as SQL files. No ORM at this stage.
 
-## כלים
+## Tooling
 
-- `tsx` לפיתוח, כדי להריץ TypeScript בלי בנייה
-- `tsc` לבניית הפרודקשן
+- `tsx` in development, so TypeScript runs without a build
+- `tsc` for the production build
 
-צבעי המותג ייבחרו בשלב מאוחר יותר. הם לא כתום ושחור.
+Brand colors are chosen in a later phase. They are not orange and black.
 
-## מה לא נכנס
+## What We Are Not Using
 
-- בלי React, Vue או Svelte בדפדפן
-- בלי ORM
-- בלי Docker בשלב הזה
+- No React, Vue, or Svelte in the browser
+- No ORM
+- No Docker at this stage

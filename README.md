@@ -1,9 +1,9 @@
-# מרפאת החיות
+# Pet Clinic
 
-## קלט מבעלי עניין
+## Input from stakeholders
 
-- מארי מההנדסה רוצה אתר יציב על סטאק נפוץ מבוסס TypeScript, ודשבורד נוח לצוות.
-- סוזן מהמוצר רוצה חיות, תסמינים, טיפולים וקביעת תורים.
-- סטיב מהשיווק רוצה אתר יפה שעובד טוב בדפדפן מודרני.
+- Mary in engineering wants a reliable site with a popular stack based on TypeScript, and a dashboard the staff can use.
+- Susan in product wants animals, ailments, therapies, and appointment booking.
+- Steve in marketing wants an attractive site that works well in a modern browser.
 
-הטקסט על המסכים כתוב בעברית.
+The words on the screens are in Hebrew.
