@@ -1,7 +1,9 @@
-# AgentClinic
+# מרפאת החיות
 
-## Input from stakeholders
+## קלט מבעלי עניין
 
-- Mary in engineering wants a reliable site with a popular stack based on TypeScript, giving agents and staff a dashboard for easy access.
-- Susan in product has a set of features about agents and their ailments, therapies, and booking appointments.
-- Steve in marketing wants an attractive site that works well with a modern browser.
+- מארי מההנדסה רוצה אתר יציב על סטאק נפוץ מבוסס TypeScript, ודשבורד נוח לצוות.
+- סוזן מהמוצר רוצה חיות, תסמינים, טיפולים וקביעת תורים.
+- סטיב מהשיווק רוצה אתר יפה שעובד טוב בדפדפן מודרני.
+
+הטקסט על המסכים כתוב בעברית.
