@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-11-05
+- Specify the about page for the pet clinic.
 - Add a feature-spec skill for the next roadmap phase.
 - Add a Hebrew feedback page for owners.
 - Add therapies, appointment booking, a staff dashboard, and Hebrew error pages.
