@@ -30,7 +30,13 @@ The response is 200, and the body is HTML that contains the text `המרפאה �
 
 In `package.json`, `hono` has no `^` and no `~`.
 
-## 5. Strict TypeScript is on
+## 5. The layout and stylesheet are present
+
+The home page HTML contains `<header`, `<main`, `<footer`, and a link to `/static/style.css`. `GET /static/style.css` returns 200.
+
+`Header`, `Main`, and `Footer` are separate files under `src/components/`.
+
+## 6. Strict TypeScript is on
 
 `tsconfig.json` contains `"strict": true`.
 

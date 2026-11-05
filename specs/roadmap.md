@@ -6,7 +6,7 @@ The words on the screens are in Hebrew.
 
 ---
 
-## Phase 1 — Hello Hono
+## Phase 1 — Hello Hono ✅
 - Install Hono and a `tsx` dev server
 - One `/` route that shows "המרפאה פתוחה"
 - Confirm TypeScript types work end to end

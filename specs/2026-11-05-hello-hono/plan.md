@@ -22,7 +22,16 @@ Task groups in order. Each group can be checked on its own.
 10. Add `"dev": "tsx watch src/index.tsx"` to `package.json`.
 11. Add `"typecheck": "tsc --noEmit"`.
 
-## Group 4 — Check
+## Group 4 — Layout
 
-12. `npm run typecheck` exits with no errors.
-13. `npm run dev` starts the server, and `http://localhost:3000` contains "המרפאה פתוחה".
+12. Create `src/components/Layout.tsx`. It renders the document shell and composes three subcomponents.
+13. Put `Header`, `Main`, and `Footer` in their own files: `src/components/Header.tsx`, `src/components/Main.tsx`, and `src/components/Footer.tsx`.
+14. Create `static/style.css` and link it from the layout with `/static/style.css`.
+15. Serve the `static/` directory from `src/index.tsx`.
+16. Render the home page inside `Layout`. The heading stays "המרפאה פתוחה".
+
+## Group 5 — Check
+
+17. `npm run typecheck` exits with no errors.
+18. `npm run dev` starts the server, and `http://localhost:3000` contains "המרפאה פתוחה", a header, a main, and a footer.
+19. `http://localhost:3000/static/style.css` returns the stylesheet.
